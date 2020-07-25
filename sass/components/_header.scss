@@ -1,0 +1,46 @@
+#header{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    border: 1px solid red;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        height: 40px;
+        margin-top: 10px;
+    
+        .logo {
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    
+        .nav .nav-items {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5px 50px;
+
+            .nav-item {
+                margin-right: 30px;
+
+                a {
+                    color: $light-gray;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+

@@ -1,0 +1,17 @@
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation .logo {
+  display: inline;
+}
+
+.navigation .nav .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: red;
+}
+/*# sourceMappingURL=header.css.map */
