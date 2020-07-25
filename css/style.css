@@ -18,7 +18,10 @@ a {
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #EEE;
+<<<<<<< HEAD
   background-color: #F8F8F8;
+=======
+>>>>>>> 673915347a0899fc43bc66ab1c785b86eb7c2659
 }
 
 #header {
@@ -87,7 +90,10 @@ body {
 
 .hero .hero-content {
   width: 50%;
+<<<<<<< HEAD
   height: 100%;
+=======
+>>>>>>> 673915347a0899fc43bc66ab1c785b86eb7c2659
   padding-top: 70px;
   margin: 0 auto;
   text-align: center;
@@ -98,6 +104,7 @@ body {
 }
 
 .hero .hero-content .hero-description {
+<<<<<<< HEAD
   font-size: 14px;
   line-height: 2;
 }
@@ -111,17 +118,29 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  line-height: 1.5;
+}
+
+.hero .hero-content .search-div {
+  margin-top: 10px;
+>>>>>>> 673915347a0899fc43bc66ab1c785b86eb7c2659
 }
 
 .hero .hero-content .search-div input[type="text"] {
   padding: 25px;
   font-size: 17px;
   float: left;
+<<<<<<< HEAD
   width: 85%;
+=======
+  width: 80%;
+>>>>>>> 673915347a0899fc43bc66ab1c785b86eb7c2659
   border-radius: 50px 0 0 50px;
 }
 
 .hero .hero-content .search-div input[type="text"]::-webkit-input-placeholder {
+<<<<<<< HEAD
   color: #a09999;
 }
 
@@ -135,18 +154,40 @@ body {
 
 .hero .hero-content .search-div input[type="text"]::placeholder {
   color: #a09999;
+=======
+  color: #E0E0E0;
+}
+
+.hero .hero-content .search-div input[type="text"]:-ms-input-placeholder {
+  color: #E0E0E0;
+}
+
+.hero .hero-content .search-div input[type="text"]::-ms-input-placeholder {
+  color: #E0E0E0;
+}
+
+.hero .hero-content .search-div input[type="text"]::placeholder {
+  color: #E0E0E0;
+>>>>>>> 673915347a0899fc43bc66ab1c785b86eb7c2659
 }
 
 .hero .hero-content .search-div button {
   float: left;
+<<<<<<< HEAD
   padding: 25px 0;
   width: 15%;
   color: #a09999;
+=======
+  padding: 25px;
+  width: 20%;
+  color: #E0E0E0;
+>>>>>>> 673915347a0899fc43bc66ab1c785b86eb7c2659
   font-size: 17px;
   cursor: pointer;
   background: #FFF;
   border-radius: 0 50px 50px 0;
 }
+<<<<<<< HEAD
 
 .hero .hero-content .stats {
   display: -webkit-box;
@@ -260,4 +301,6 @@ body {
   margin: auto;
   color: #a09999;
 }
+=======
+>>>>>>> 673915347a0899fc43bc66ab1c785b86eb7c2659
 /*# sourceMappingURL=style.css.map */
