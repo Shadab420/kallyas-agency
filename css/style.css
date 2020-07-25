@@ -21,6 +21,22 @@ body {
   background-color: #F8F8F8;
 }
 
+.btn-1 {
+  background-color: #FA5158;
+  color: #FFF;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.btn-2 {
+  background-color: #FFF;
+  color: #FA5158;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
 #header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,7 +94,9 @@ body {
 
 .hero {
   background-image: url("../../assets/images/header/header-bg.png");
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -268,5 +286,85 @@ body {
   margin: auto;
   color: #a09999;
   line-height: 1.5;
+}
+
+.services {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.services .services-bg {
+  width: 90%;
+  height: 300px;
+  margin-top: 100px;
+  background-color: #F1F1F1;
+  border-radius: 20px;
+}
+
+.services .services-content {
+  margin-top: -360px;
+}
+
+.services .services-content .services-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .services-content .services-heading h1 {
+  color: #1A2E4D;
+  width: 250px;
+}
+
+.services .services-content .services-description {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #a09999;
+  width: 65%;
+  margin: auto;
+}
+
+.services .services-content .services-description li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services .services-content .services-description li span:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.3rem solid #FA5158;
+  width: 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.services .services-content .services-description li p {
+  line-height: 1.5;
+}
+
+.services .services-content .services-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 70%;
+  margin: 70px auto;
+}
+
+.services .services-content .services-images img {
+  width: 100%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
