@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #EEE;
+  background-color: #F8F8F8;
+}
+
 #header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,11 +29,10 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   height: 60px;
-  border: 1px solid red;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
 }
 
 #header .navigation {
@@ -69,5 +74,190 @@ a {
 
 #header .navigation .nav .nav-items .nav-item a:hover {
   cursor: pointer;
+}
+
+.hero {
+  background-image: url("../../assets/images/header/header-bg.png");
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -20px;
+}
+
+.hero .hero-content {
+  width: 50%;
+  height: 100%;
+  padding-top: 70px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero .hero-content .hero-title {
+  font-size: 1.5rem;
+}
+
+.hero .hero-content .hero-description {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.hero .hero-content .search-div {
+  height: 120px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-content .search-div input[type="text"] {
+  padding: 25px;
+  font-size: 17px;
+  float: left;
+  width: 85%;
+  border-radius: 50px 0 0 50px;
+}
+
+.hero .hero-content .search-div input[type="text"]::-webkit-input-placeholder {
+  color: #a09999;
+}
+
+.hero .hero-content .search-div input[type="text"]:-ms-input-placeholder {
+  color: #a09999;
+}
+
+.hero .hero-content .search-div input[type="text"]::-ms-input-placeholder {
+  color: #a09999;
+}
+
+.hero .hero-content .search-div input[type="text"]::placeholder {
+  color: #a09999;
+}
+
+.hero .hero-content .search-div button {
+  float: left;
+  padding: 25px 0;
+  width: 15%;
+  color: #a09999;
+  font-size: 17px;
+  cursor: pointer;
+  background: #FFF;
+  border-radius: 0 50px 50px 0;
+}
+
+.hero .hero-content .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 280px;
+}
+
+.hero .hero-content .stats .vertical-card {
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: #FFF;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 30px -5px #a09999;
+          box-shadow: 0px 0px 30px -5px #a09999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .hero-content .stats .vertical-card span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero-content .stats .vertical-card span h1 {
+  color: #F2B115;
+}
+
+.hero .hero-content .stats .vertical-card span i {
+  margin-top: -20px;
+  color: #40C3B1;
+}
+
+.hero .hero-content .stats .vertical-card p {
+  color: #a09999;
+  width: 80%;
+  margin: auto;
+}
+
+.hero .hero-content .stats .vertical-card img {
+  width: 60%;
+  margin: 10px auto 30px auto;
+}
+
+.hero .hero-content .stats .horizontal-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFF;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 30px -5px #a09999;
+          box-shadow: 0px 0px 30px -5px #a09999;
+  padding: 20px 10px;
+}
+
+.hero .hero-content .stats .horizontal-card .monthly-growth-img {
+  padding: 10px;
+}
+
+.hero .hero-content .stats .horizontal-card .monthly-growth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .hero-content .stats .horizontal-card .monthly-growth .stats-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero .hero-content .stats .horizontal-card .monthly-growth .stats-div h1 {
+  color: #40C3B1;
+}
+
+.hero .hero-content .stats .horizontal-card .monthly-growth .stats-div img {
+  width: 20%;
+  margin: 10px 0 30px 0;
+}
+
+.hero .hero-content .stats .horizontal-card .monthly-growth p {
+  width: 80%;
+  margin: auto;
+  color: #a09999;
 }
 /*# sourceMappingURL=style.css.map */

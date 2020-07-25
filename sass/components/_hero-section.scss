@@ -1,0 +1,141 @@
+.hero {
+    background-image: url('../../assets/images/header/header-bg.png');
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    
+    .hero-content {
+        width: 50%;
+        height: 100%;
+        padding-top: 70px;
+        margin: 0 auto;
+        text-align: center;
+
+        .hero-title {
+            font-size: 1.5rem;
+        }
+    
+        .hero-description {
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .search-div {
+            height: 120px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+
+            input[type="text"] {
+                padding: 25px;
+                font-size: 17px;
+                float: left;
+                width: 85%;
+                border-radius: 50px 0 0 50px;
+            }
+
+            input[type="text"]::placeholder {
+                color: $light-gray2;
+            }
+
+            button {
+                float: left;
+                padding: 25px 0;
+                width: 15%;
+                color: $light-gray2;
+                font-size: 17px;
+                cursor: pointer;
+                background: $white;
+                border-radius: 0 50px 50px 0;
+              }
+              
+        }
+
+        .stats{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            height: 280px;
+
+            .vertical-card {
+                align-self: center;
+                background: $white;
+                border-radius: 30px;
+                box-shadow: 0px 0px 30px -5px $light-gray2;
+                display: flex;
+                flex-direction: column;
+
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h1{
+                        color: $brown;
+                    }
+
+                    i{
+                        margin-top: -20px;
+                        color: $paste;
+                    }
+                }
+
+                p {
+                    color: $light-gray2;
+                    width: 80%;
+                    margin: auto;
+                }
+
+                img {
+                    width: 60%;
+                    margin: 10px auto 30px auto;
+                }
+                
+            }
+
+            .horizontal-card{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background: $white;
+                border-radius: 30px;
+                box-shadow: 0px 0px 30px -5px $light-gray2;
+                padding: 20px 10px;
+
+                .monthly-growth-img {
+                    padding: 10px;
+                }
+
+                .monthly-growth {
+                    display: flex;
+                    flex-direction: column;
+
+                    .stats-div {
+                        display: flex;
+                        justify-content: space-around;
+
+                        h1 {
+                            color: $paste;
+                        }
+
+                        img {
+                            width: 20%;
+                            margin: 10px 0 30px 0;
+                        }
+
+                    }
+
+                    p{
+                        width: 80%;
+                        margin: auto;
+                        color: $light-gray2;
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
