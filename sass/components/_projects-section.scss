@@ -3,16 +3,8 @@
     .projects-content {
 
         h1 {
-
-            color: $navy-blue;
-            width: 305px;
-            line-height: 1.2;
-            text-align: center;
+            @extend .heading1;
             margin: 20px auto 80px auto;
-
-            span {
-                color: $primary;
-            }
         }
     }
 }

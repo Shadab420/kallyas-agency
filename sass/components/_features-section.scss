@@ -1,0 +1,143 @@
+.features {
+    .feature1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        
+        .feature {
+            justify-self: flex-end;
+            align-self: center;
+
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: fit-content;
+            // margin: auto;
+
+            h1 {
+                @extend .heading1;
+                margin: 30px 0;
+                text-align: left;
+                font-size: 3rem;
+                width: 320px;
+            }
+            
+            p {
+                color: $light-gray2;
+                width: 100%;
+                line-height: 1.8;
+            }
+        }
+
+        .feature-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: cener;
+            margin-top: 60px;
+
+            img {
+                box-shadow: 10px 10px 40px 2px $light-gray2;
+            }
+
+            .left {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .first {
+                    align-self: flex-end;
+                }
+
+                .third {
+                    align-self: flex-end;
+                    margin-top: 5px;
+                }
+                
+            }
+
+            .right {
+                
+                .second {
+                    margin: 40% 0 5px 5px;
+                }
+
+                .fourth {
+                    margin-left: 5px;
+                }
+
+            }
+        }
+    }
+
+    .feature2 {
+
+        .feature2-bg {
+            width: 90%;
+            height: 300px;
+            margin: 120px 0 60px auto;
+            border-radius: 50px 0 0 50px;
+            box-shadow: 10px 10px 30px 0px $light-gray2;
+           
+            background: $primary;
+        }
+
+        .feature2-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: flex-end;
+            margin-top: -305px;
+
+            .feature-images {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 295px;
+                
+                .img1 {
+                    clip-path: circle(50% at 50% 50%);
+                    background-color: $paste;
+                    width: 100px;
+                    height: 100px;
+                }
+
+                .img2 {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                    background: $brown;
+                    width: 100px;
+                    height: 100px;
+                }
+
+                .img3 {
+                    @extend .img2;
+                    background: $blue;
+                }
+
+                .img4 {
+                    @extend .img1;
+                    background: $purple;
+                }
+            }
+
+            .feature {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                justify-self: flex-start;
+                width: 60%;
+
+                h1 {
+                    @extend .heading1;
+                    color: $white;
+                    text-align: left;
+                }
+
+                p {
+                    width: 100%;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+}
