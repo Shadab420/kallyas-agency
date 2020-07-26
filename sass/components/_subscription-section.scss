@@ -1,0 +1,135 @@
+.subscription {
+    
+    margin-bottom: 60px;
+    
+    .subscription-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            @extend .heading1;
+            text-align: left;
+            margin: 120px auto 60px auto;
+            font-size: 2.3rem;
+            width: 350px;
+        }
+
+        .subscribe {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+            width: 70%;
+            margin: auto;
+
+            .contact {
+                h2 {
+                    @extend .heading1;
+                    margin-bottom: 50px;
+                }
+
+                .contact-description {
+
+                    width: 90%;
+                    margin: auto;
+
+                    li {
+                        @extend .list-style1;
+                        margin-bottom: 40px;
+
+                        p {
+                            color: $light-gray2;
+                        }
+                    }
+                }
+
+                .contact-addresses {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    place-items: center;
+                    
+                    p{
+                        line-height: 1.5;
+                    }
+
+
+                    .phone {
+                        display: flex;
+                        flex-direction: column;
+                        place-items: center;
+                        color: $light-gray2;
+
+                        h3 {
+                            margin: 10px auto;
+                            color: $brown;
+                        }
+                    }
+
+                    .email {
+                        display: flex;
+                        flex-direction: column;
+                        place-items: center;
+                        color: $light-gray2;
+
+                        h3 {
+                            margin: 10px auto;
+                            color: $paste;
+                        }
+                    }
+
+                    .location {
+                        display: flex;
+                        flex-direction: column;
+                        place-items: center;
+                        color: $light-gray2;
+
+                        h3 {
+                            margin: 10px auto;
+                            color: $primary;
+                        }
+
+                        p {
+                            width: 80%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .subscription-form {
+                width: 100%;
+                height: 100%;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    place-items: center;
+
+                    input {
+                        background-color: $white;
+                        margin-bottom: 15px;
+                        padding: 20px 20px;
+                        border-radius: 20px;
+                        width: 80%;
+
+                        &::placeholder {
+                            color: $light-gray2;
+                        }
+                    }
+
+                    textarea {
+                        width: 80%;
+                        padding: 20px 20px;
+                        height: 130px;
+                        border-radius: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    button {
+                        @extend .btn-1;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
