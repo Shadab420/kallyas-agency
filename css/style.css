@@ -367,4 +367,16 @@ body {
   width: 100%;
   margin: auto;
 }
+
+.projects .projects-content h1 {
+  color: #1A2E4D;
+  width: 305px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 20px auto 80px auto;
+}
+
+.projects .projects-content h1 span {
+  color: #FA5158;
+}
 /*# sourceMappingURL=style.css.map */
