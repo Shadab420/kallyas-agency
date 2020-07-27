@@ -23,5 +23,8 @@ $(document).ready(function(){
                 nav:false,
             }
         }
-    })
+    });
+
+    //set footer date
+    $('#date').html(new Date().getFullYear());
 })

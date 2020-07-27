@@ -29,7 +29,7 @@ body {
   font-weight: bold;
 }
 
-.btn-2 {
+.btn-2, .footer .footer-content button {
   background-color: #FFF;
   color: #FA5158;
   padding: 10px 30px;
@@ -596,7 +596,7 @@ body {
 }
 
 .subscription {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .subscription .subscription-content {
@@ -764,5 +764,65 @@ body {
 
 .subscription .subscription-content .subscribe .subscription-form form button {
   width: 80%;
+}
+
+.footer .footer-content {
+  margin-top: -470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-content h1 {
+  font-size: 3rem;
+}
+
+.footer .footer-content .long-description {
+  width: 55%;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.footer .footer-content button {
+  margin-top: 30px;
+}
+
+.footer .footer-content .other-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: flex-start;
+  margin-top: 40px;
+}
+
+.footer .footer-content .other-links .menu-links, .footer .footer-content .other-links .social-links, .footer .footer-content .other-links .addresses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.footer .footer-content .other-links .menu-links a, .footer .footer-content .other-links .social-links a, .footer .footer-content .other-links .addresses a {
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.footer .footer-content .other-links .menu-links p, .footer .footer-content .other-links .social-links p, .footer .footer-content .other-links .addresses p {
+  margin-bottom: 10px;
+  width: 280px;
 }
 /*# sourceMappingURL=style.css.map */

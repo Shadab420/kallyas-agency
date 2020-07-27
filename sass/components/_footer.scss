@@ -1,0 +1,56 @@
+.footer {
+
+    svg {
+        
+        path {
+            
+        }
+    }
+
+    .footer-content {
+        margin-top: -470px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            font-size: 3rem;
+        }
+
+        .long-description {
+            width: 55%;
+            text-align: center;
+            line-height: 1.5;
+            margin-top: 30px;
+        }
+
+        button {
+            @extend .btn-2;
+            margin-top: 30px;
+        }
+
+        .other-links{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            place-items: flex-start;
+            margin-top: 40px;
+
+            .menu-links, .social-links, .addresses {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin-bottom: 10px;
+
+                a {
+                    color: $white;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 10px;
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
