@@ -48,11 +48,19 @@
 
                 .first {
                     align-self: flex-end;
+                    img{
+                        width: 80%;
+                    }
                 }
 
                 .third {
                     align-self: flex-end;
                     margin-top: 5px;
+
+                    img{
+                        width: 85%;
+                        margin-left: -30px;
+                    }
                 }
                 
             }
@@ -60,11 +68,19 @@
             .right {
                 
                 .second {
-                    margin: 40% 0 5px 5px;
+                    margin: 50% 0 5px 0;
+                    img{
+                        width: 50%;
+                        margin-left: -50px;
+                    }
                 }
 
                 .fourth {
-                    margin-left: 5px;
+
+                    img{
+                        width: 35%;
+                        margin-left: -50px;
+                    }
                 }
 
             }
@@ -153,13 +169,14 @@
             
             h1 {
                 @extend .heading1;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 text-align: left;
                 width: 500px;
+                margin-top: 70px;
             }
 
             p {
-                width: 80%;
+                width: 90%;
                 color: $light-gray2;
                 line-height: 1.8;
             }
@@ -169,7 +186,7 @@
             width: 400px;
             background: $light-gray;
             padding: 30px 0;
-            margin-left: -35px;
+            margin-left: -80px;
             z-index: -1;
             img {
                 width: 70%;

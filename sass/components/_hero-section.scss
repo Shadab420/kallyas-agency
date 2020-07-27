@@ -14,7 +14,9 @@
         text-align: center;
 
         .hero-title {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+            width: 80%;
+            margin-left: 10%;
         }
     
         .hero-description {
@@ -27,6 +29,7 @@
             margin-bottom: 20px;
             display: flex;
             align-items: center;
+            
 
             input[type="text"] {
                 padding: 25px;
@@ -34,6 +37,7 @@
                 float: left;
                 width: 85%;
                 border-radius: 50px 0 0 50px;
+                box-shadow: -3px -1px 10px -2px $light-gray2;
             }
 
             input[type="text"]::placeholder {
@@ -50,6 +54,7 @@
                 cursor: pointer;
                 background: $white;
                 border-radius: 0 50px 50px 0;
+                box-shadow: 3px -1px 10px -2px $light-gray2;
               }
               
         }
