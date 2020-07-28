@@ -1,40 +1,91 @@
 #header{
     display: flex;
     justify-content: center;
-    height: 60px;
+    height: 6rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 9999;
 
     .navigation {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 70%;
-        height: 40px;
-        margin-top: 10px;
+        height: 4rem;
+        margin-left: 15%;
+        margin-top: 1rem;
+
+        @include laptop {
+            width: 80%;
+            margin-left: 10%;
+        }
+
     
         .logo {
+
+            @include tablet {
+                display: flex;
+                justify-content: space-between;
+                width: 95%;
+            }
             
             &:hover {
                 cursor: pointer;
             }
         }
+
+        #menu-toggle {
+            display: none;
+            padding: 5px;
+            @extend .btn-2;
+
+            &:focus {
+                background: $brown;
+                color: white;
+            }
+
+            @include tablet {
+                display: block;
+            }
+        }
+
     
         .nav .nav-items {
             display: flex;
             justify-content: space-evenly;
-            padding: 5px 50px;
+            padding: .5rem 5rem;
+
+            @include tablet {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;        
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0, 0.7);
+            }
 
             .nav-item {
-                margin-right: 30px;
+                margin-right: 3rem;
 
                 a {
                     color: $light-gray;
 
                     &:hover {
                         cursor: pointer;
+                    }
+
+                
+                }
+
+                @include tablet {
+                    margin: 3rem 0 0 0;
+                    text-align: center;
+
+                    &:last-child {
+                        margin-bottom: 3rem;
                     }
                 }
             }

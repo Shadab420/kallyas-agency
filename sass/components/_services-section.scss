@@ -3,15 +3,15 @@
 
     .services-bg {
         width: 90%;
-        height: 300px;
-        margin-top: 100px;
+        height: 30rem;
+        margin-top: 10rem;
         background-color: #F1F1F1;
-        border-radius: 20px;
+        border-radius: 2rem;
     }
 
     .services-content {
 
-        margin-top: -360px;
+        margin-top: -36rem;
 
         .services-heading {
             display: flex;
@@ -20,18 +20,22 @@
             
             h1 {
                 color: $navy-blue;
-                width: 250px;
+                width: 25rem;
             }
         }
 
         .services-description {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-column-gap: 20px;
+            grid-column-gap: 2rem;
             justify-content: space-around;
             color: $light-gray2;
             width: 65%;
             margin: auto;
+
+            @include mobile {
+                grid-template-columns: auto;
+            }
 
             li{
                 @extend .list-style1;
@@ -43,7 +47,15 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             width: 70%;
-            margin: 70px auto;
+            margin: 7rem auto;
+
+            @include laptop {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @include mobile {
+                grid-template-columns: 1fr;
+            }
 
             img {
                 width: 100%;

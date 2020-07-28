@@ -27,4 +27,9 @@ $(document).ready(function(){
 
     //set footer date
     $('#date').html(new Date().getFullYear());
+
+    //menu toggle click handler
+    $('#menu-toggle').click(() => {
+        $('.nav .nav-items').css({ display: 'flex'});
+    })
 })
