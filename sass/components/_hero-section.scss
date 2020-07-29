@@ -101,6 +101,10 @@
             align-items: flex-start;
             height: 28rem;
 
+            @include mobile {
+                flex-direction: column;
+            }
+
             .vertical-card {
                 align-self: center;
                 background: $white;
@@ -110,6 +114,10 @@
                 flex-direction: column;
                 width: 13.5rem;
                 margin-right: 1rem;
+
+                @include mobile {
+                    margin-bottom: 1rem;                    
+                }
 
                 span{
                     display: flex;

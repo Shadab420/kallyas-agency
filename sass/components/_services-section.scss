@@ -17,10 +17,18 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+
+            @include mobile {
+                flex-direction: column;
+            }
             
             h1 {
                 color: $navy-blue;
-                width: 25rem;
+                width: 40%;
+            }
+
+            @include mobile {
+                margin-bottom: 2rem;
             }
         }
 

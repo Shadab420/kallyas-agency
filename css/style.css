@@ -27,10 +27,6 @@ body {
   width: 100%;
 }
 
-p {
-  max-width: 90%;
-}
-
 .btn-1, .subscription .subscription-content .subscribe .subscription-form form button {
   background-color: #FA5158;
   color: #FFF;
@@ -174,14 +170,21 @@ p {
 
 #header .navigation .nav .nav-items .nav-item {
   margin-right: 3rem;
+  padding: 1.2rem;
 }
 
 #header .navigation .nav .nav-items .nav-item a {
   color: #EEE;
+  padding: 1rem;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 #header .navigation .nav .nav-items .nav-item a:hover {
   cursor: pointer;
+  -webkit-clip-path: polygon(0% 0%, 5% 100%, 87% 88%, 99% 90%, 94% 4%);
+          clip-path: polygon(0% 0%, 5% 100%, 87% 88%, 99% 90%, 94% 4%);
+  background-color: #F2B115;
 }
 
 @media screen and (max-width: 768px) {
@@ -333,6 +336,15 @@ p {
   height: 28rem;
 }
 
+@media screen and (max-width: 500px) {
+  .hero .hero-content .stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .hero .hero-content .stats .vertical-card {
   -ms-flex-item-align: center;
       align-self: center;
@@ -349,6 +361,12 @@ p {
           flex-direction: column;
   width: 13.5rem;
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .hero .hero-content .stats .vertical-card {
+    margin-bottom: 1rem;
+  }
 }
 
 .hero .hero-content .stats .vertical-card span {
@@ -473,9 +491,24 @@ p {
           align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+  .services .services-content .services-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .services .services-content .services-heading h1 {
   color: #1A2E4D;
-  width: 25rem;
+  width: 40%;
+}
+
+@media screen and (max-width: 500px) {
+  .services .services-content .services-heading {
+    margin-bottom: 2rem;
+  }
 }
 
 .services .services-content .services-description {
